@@ -6,11 +6,11 @@
     <string name="btm_clean">Limpar valores</string>
     <string name="btm_calculate">Calcular</string>
     <string name="rate">Taxa</string>
-    <string name="value_rate">R$ 15,00</string>
+    <string name="value_rate">R$</string>
     <string name="total">Total</string>
-    <string name="value_total">R$ 115,00</string>
+    <string name="value_total">R$</string>
     <string name="change">Troco</string>
-    <string name="value_change">R$ 35,00</string>
+    <string name="value_change">R$</string>
     <string name="value_amount_paid" />
     <string name="value_bill_amount" />
 </resources>
