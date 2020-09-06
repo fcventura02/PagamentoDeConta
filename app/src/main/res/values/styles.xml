@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextStile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/tv_color</item>
+        <item name="android:colorBackgroundCacheHint">@color/tv_color</item>
+    </style>
+    <style name="Text_Result_Stile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/tv_result_color</item>
+    </style>
+    <style name="Btm_style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:radius">20dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/btm_tx_color</item>
+        <item name="android:background">@color/btm_bg_color</item>
+        <item name="android:paddingRight" >26dp</item>
+        <item name="android:paddingLeft" >26dp</item>
+        <item name="android:width" >180dp</item>
+    </style>
+
+    <style name="Btm_Contain" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+</resources>

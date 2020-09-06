@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/TextStile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bill_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/bill_amount"
+        android:hint="@string/bill_amount"
+        android:text="@string/value_bill_amount"
+        android:inputType="number"
+        android:textColor="@color/tv_color"
+        android:textColorHint="@color/tv_color" />
+
+    <TextView
+        style="@style/TextStile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/value_money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amount_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/amount_paid"
+        android:hint="@string/amount_paid"
+        android:text="@string/value_amount_paid"
+        android:inputType="number"
+        android:textColor="@color/tv_color"
+        android:textColorHint="@color/tv_color" />
+
+    <LinearLayout
+        style="@style/Btm_Contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/Btm_style"
+            android:id="@+id/btm_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:text="@string/btm_clean" />
+
+        <Button
+            style="@style/Btm_style"
+            android:id="@+id/btm_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="@string/btm_calculate" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextStile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/rate" />
+
+    <TextView
+        style="@style/Text_Result_Stile"
+        android:id="@+id/text_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/value_rate" />
+
+    <TextView
+        style="@style/TextStile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/total" />
+
+    <TextView
+        style="@style/Text_Result_Stile"
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/value_total" />
+
+    <TextView
+        style="@style/TextStile"
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/change" />
+
+    <TextView
+        style="@style/Text_Result_Stile"
+        android:id="@+id/text_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/value_change" />
+</LinearLayout>
