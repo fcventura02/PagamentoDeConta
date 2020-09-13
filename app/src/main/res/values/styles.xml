@@ -24,7 +24,7 @@
         <item name="android:radius">20dp</item>
         <item name="android:textSize">18dp</item>
         <item name="android:textColor">@color/btm_tx_color</item>
-        <item name="android:background">@color/btm_bg_color</item>
+        <item name="android:background">@drawable/bg_btm</item>
         <item name="android:paddingRight" >26dp</item>
         <item name="android:paddingLeft" >26dp</item>
         <item name="android:width" >180dp</item>
