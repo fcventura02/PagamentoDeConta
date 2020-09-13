@@ -14,4 +14,6 @@
     <string name="value_amount_paid" />
     <string name="value_bill_amount" />
     <string name="tv_rate_value">Valor da taxa é de: 10%</string>
+    <string name="description_img_logo">logo</string>
+    <string name="barra">description_img_barra</string>
 </resources>
