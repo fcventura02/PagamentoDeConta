@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             val amount = bill_amount.text.toString()
             val paid = amount_paid.text.toString()
             if (amount.isNotEmpty() && paid.isNotEmpty())
-            calcular(valueRate, amount.toFloat(), paid.toFloat())
+                calcular(valueRate, amount.toFloat(), paid.toFloat())
         }
         btm_clean.setOnClickListener {
             clean()
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val amount = bill_amount.text.toString()
 
                 if (amount.isNotEmpty()) {
-                    calculaTotal(amount.toFloat(),valueRate)
+                    calculaTotal(amount.toFloat(), valueRate)
                 }
 
             }
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
 
     @SuppressLint("SetTextI18n")
-    fun calcular(rate: Int, amount: Float, paid:Float) {
+    fun calcular(rate: Int, amount: Float, paid: Float) {
         tv_change
         if (bill_amount.length() == 0 || amount_paid.length() == 0)
             return Toast.makeText(
@@ -69,12 +69,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun calculaTotal (amount: Float, rate: Int): Float {
-        val rateValue = amount*rate/100
+    private fun calculaTotal(amount: Float, rate: Int): Float {
+        val rateValue = amount * rate / 100
         val result = amount + rateValue
 
-        text_rate.text = "R$ ${round(rateValue * 100) / 100}"
-        text_result.text = "R$ $result"
+        text_rate.text = "R$ ${
+            round(rateValue * 100) / 100
+        }"
+        text_result.text = "R$ ${
+            round(result * 100) / 100
+        }"
 
         return result
     }
@@ -84,9 +88,9 @@ class MainActivity : AppCompatActivity() {
         bill_amount.setText("")
         amount_paid.setText("")
         tv_change.text = "Troco"
-        text_rate.text = "R$ "
-        text_change.text = "R$ "
-        text_result.text = "R$ "
+        text_rate.text = "R$ 0.00"
+        text_change.text = "R$ 0.00"
+        text_result.text = "R$ 0.00"
     }
 }
 

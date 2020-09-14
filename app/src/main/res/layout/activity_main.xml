@@ -11,12 +11,28 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/description_img_logo"
-        android:src="@drawable/icon_recebimento" />
+    <LinearLayout
+        style="@style/Btm_Contain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
+        <TextView
+            style="@style/TextStile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/title_app" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/description_img_logo"
+            android:src="@drawable/icon_recebimento" />
+    </LinearLayout>
 
     <LinearLayout
         style="@style/Btm_Contain"
@@ -58,8 +74,8 @@
             android:layout_width="2dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="3dp"
-            android:src="@drawable/colum"
-            android:contentDescription="@string/barra" />
+            android:contentDescription="@string/barra"
+            android:src="@drawable/colum" />
 
         <LinearLayout
             style="@style/Btm_Contain"
@@ -91,11 +107,11 @@
     </LinearLayout>
 
     <TextView
-        style="@style/TextStile"
         android:id="@+id/tv_rate_value"
+        style="@style/TextStile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tv_rate_value"/>
+        android:text="@string/tv_rate_value" />
 
     <SeekBar
         android:id="@+id/rate"

@@ -6,14 +6,15 @@
     <string name="btm_clean">Limpar valores</string>
     <string name="btm_calculate">Calcular</string>
     <string name="rate">Taxa</string>
-    <string name="value_rate">R$</string>
+    <string name="value_rate">R$ 0.00</string>
     <string name="total">Total</string>
-    <string name="value_total">R$</string>
+    <string name="value_total">R$ 0.00</string>
     <string name="change">Troco</string>
-    <string name="value_change">R$</string>
+    <string name="value_change">R$ 0.00</string>
     <string name="value_amount_paid" />
     <string name="value_bill_amount" />
     <string name="tv_rate_value">Valor da taxa é de: 10%</string>
     <string name="description_img_logo">logo</string>
     <string name="barra">description_img_barra</string>
+    <string name="title_app">Pagamento de conta</string>
 </resources>
