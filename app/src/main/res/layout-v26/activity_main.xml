@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="logo"
+        android:contentDescription="@string/description_img_logo"
         android:src="@drawable/icon_recebimento" />
 
 
@@ -58,8 +58,8 @@
             android:layout_width="2dp"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="3dp"
-            android:src="@drawable/colum"
-            android:contentDescription=" " />
+            android:contentDescription="@string/barra"
+            android:src="@drawable/colum" />
 
         <LinearLayout
             style="@style/Btm_Contain"
