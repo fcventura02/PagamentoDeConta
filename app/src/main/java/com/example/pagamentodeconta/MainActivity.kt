@@ -1,10 +1,10 @@
 package com.example.pagamentodeconta
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.round
 
@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
             clean()
         }
         rate.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            @SuppressLint("SetTextI18n")
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, formUser: Boolean) {
                 valueRate = progress
-                tv_rate_value.text = "Valor da taxa é de: $valueRate%"
+                val text = getString(R.string.rate_value_string, valueRate)
+                tv_rate_value.text = text
                 val amount = bill_amount.text.toString()
 
                 if (amount.isNotEmpty()) {
